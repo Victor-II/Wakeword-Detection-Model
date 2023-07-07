@@ -51,8 +51,8 @@ if __name__ == "__main__":
     args = {
         'sample_rate': 8000,
         'seconds': 2,
-        'save_path': 'C:/Users/Victor/Desktop/crdmProiect/temp.wav',
-        'model_state_dict': 'C:/Users/Victor/Desktop/crdmProiect/wakeword/saved_models/cnn_model.pt',
+        'save_path': 'Path/To/temp.wav',
+        'model_state_dict': 'Path/To/saved_models/cnn_model.pt',
         'threshold': 0.5
     }
 
