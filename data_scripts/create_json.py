@@ -10,12 +10,12 @@ def main(args):
     random.shuffle(ones)
     percent = args.get('test_percent')
     data = []
-    for zero in zeros[: int(0.5*len(zeros))]:
+    for zero in zeros:
         data.append({
             "key": os.path.join(args.get('zero_label_dir'), zero),
             "label": 0
         })
-    for one in ones[: int(0.5*len(ones))]:
+    for one in ones:
         data.append({
             "key": os.path.join(args.get('one_label_dir'), one),
             "label": 1
@@ -42,9 +42,9 @@ def main(args):
 if __name__ == "__main__":
     
     args = {
-        'zero_label_dir': 'C:/Users/Victor/Desktop/WakeWordData/label_zero',
-        'one_label_dir': 'C:/Users/Victor/Desktop/WakeWordData/label_one',
-        'json_save_path': 'C:/Users/Victor/Desktop/WakeWordData/json_20percent',
+        'zero_label_dir': 'Path/To/label_zero',
+        'one_label_dir': 'Path/To/label_one',
+        'json_save_path': 'Path/To/json',
         'test_percent': 10
     }
     
