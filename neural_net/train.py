@@ -118,10 +118,10 @@ def main(args):
 if __name__ == '__main__':
 
     args = {
-        'device': 'cuda',
-        'train_json': 'C:/Users/Victor/Desktop/WakeWordData/json_20percent/train.json',
-        'test_json': 'C:/Users/Victor/Desktop/WakeWordData/json_20percent/test.json',
-        'save_state_dict': 'C:/Users/Victor/Desktop/crdmProiect/wakeword_detection/saved_models/cnn_model.pt',
+        'device': 'cuda' if torch.cuda.is_available() else 'cpu',
+        'train_json': 'Path/To/json/train.json',
+        'test_json': 'Path/To/json/test.json',
+        'save_state_dict': 'Path/To/saved_models/cnn_model.pt',
         'sample_rate': 8000,
         'num_samples': 24000,
         'batch_size': 64,
@@ -131,4 +131,4 @@ if __name__ == '__main__':
 
     history = main(args)
     history_df = pd.DataFrame.from_dict(history)
-    history_df.to_csv('C:/Users/Victor/Desktop/crdmProiect/wakeword_detection/saved_history/history.csv')
+    history_df.to_csv('Path/To/history.csv')
