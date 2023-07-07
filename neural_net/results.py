@@ -26,6 +26,6 @@ def plot_loss(history=None):
 
 if __name__ == '__main__':
 
-    history = 'C:/Users/Victor/Desktop/crdmProiect/wakeword_detection/saved_history/history.csv'
+    history = 'Path/To/history.csv'
     plot_accuracy(history)
     plot_loss(history)
