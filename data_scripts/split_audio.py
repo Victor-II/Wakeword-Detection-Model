@@ -20,8 +20,8 @@ if __name__ == "__main__":
 
     args = {
         'seconds': 3,
-        'file_path': 'C:/Users/Victor/Desktop/WakeWordData/Conv/101.wav',
-        'save_path': 'C:/Users/Victor/Desktop/WakeWordData/Conv'
+        'file_path': 'File/Path',
+        'save_path': 'Save/Path'
     }
 
     main(args)
