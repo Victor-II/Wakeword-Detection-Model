@@ -66,7 +66,7 @@ if __name__ == "__main__":
     args = {
         'sample_rate': 8000,
         'seconds': 3600,
-        'save_path': 'C:/Users/Victor/Desktop/WakeWordData/wakewords/'
+        'save_path': 'Save/Path'
     }
     
     main(args)
