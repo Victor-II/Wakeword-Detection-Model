@@ -15,8 +15,8 @@ def main(args):
 if __name__ == "__main__":
     
     args = {
-        'data_dir': 'C:/Users/Victor/Desktop/WakeWordData/wakewords',
-        'dest_dir': 'C:/Users/Victor/Desktop/WakeWordData/label_one',
+        'data_dir': 'Path/To/Data_dir',
+        'dest_dir': 'Path/To/Destinaion_dir',
         'copy_number': 100
     }
 
